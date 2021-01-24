@@ -1,0 +1,27 @@
+{
+  "name": "brands-dev",
+  "version": "1.0.0",
+  "description": "Brand assets for developers",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/musaid/brands-dev.git"
+  },
+  "keywords": [
+    "brands",
+    "assets",
+    "logos",
+    "dev",
+    "developers",
+    "svg"
+  ],
+  "author": "musaid <musaid@live.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/musaid/brands-dev/issues"
+  },
+  "homepage": "https://github.com/musaid/brands-dev#readme"
+}
