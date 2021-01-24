@@ -5,6 +5,7 @@ const app: Application = express();
 const port = 5000;
 
 // Application routing
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use('/', (_req: Request, res: Response, _next: NextFunction ) => {
   res.status(200).send({data: 'Hello World!'});
 });
