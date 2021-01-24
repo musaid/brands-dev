@@ -1,15 +1,16 @@
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express, { Application } from 'express';
+import { routes } from './routes';
 
 // Boot express
-const app: Application = express();
-const port = 5000;
+export const app: Application = express();
 
 // Application routing
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-app.use('/', (_req: Request, res: Response, _next: NextFunction) => {
-  res.status(200).send({ data: 'Hello World!' });
-});
+routes(app);
 
-// Start server
-// eslint-disable-next-line no-console
-app.listen(port, () => console.log(`Server is listening on port ${port}!`));
+if (process.env.NODE_ENV !== 'test') {
+  const port = 5000;
+
+  // Start server
+  // eslint-disable-next-line no-console
+  app.listen(port, () => console.log(`Server is listening on port ${port}!`));
+}
